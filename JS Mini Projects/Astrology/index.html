@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Aura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="hero-card">
+            <div class="hero-copy">
+                <p class="eyebrow">Personal cosmic reading</p>
+                <h1>Find the energy written in your stars.</h1>
+                <p class="intro">
+                    Enter your details and receive a cleaner, more polished zodiac reading
+                    with your sign, cosmic vibe, guidance, and prediction.
+                </p>
+            </div>
+
+            <div class="panel-grid">
+                <section class="form-panel">
+                    <h2>Unlock Your Reading</h2>
+                    <p class="panel-text">Use your birth date to reveal your astrological profile.</p>
+
+                    <form id="horoscopeForm" onsubmit="generateHoroscope(event)">
+                        <div class="input-row">
+                            <label class="field">
+                                <span>First name</span>
+                                <input type="text" id="firstName" placeholder="Khushi" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Last name</span>
+                                <input type="text" id="lastName" placeholder="Sharma" required>
+                            </label>
+                        </div>
+
+                        <label class="field">
+                            <span>Birth date</span>
+                            <input type="date" id="birthDate" required>
+                        </label>
+
+                        <button type="submit" class="primary-btn">Reveal My Fate</button>
+                        <p id="errorMessage" class="error-message" aria-live="polite"></p>
+                    </form>
+                </section>
+
+                <section id="resultCard" class="result-panel hidden" aria-live="polite">
+                    <div class="result-header">
+                        <p class="result-kicker">Your astrological reading</p>
+                        <h2 id="sign">Moonlit Sign</h2>
+                        <p id="name" class="result-name"></p>
+                    </div>
+
+                    <div class="result-grid">
+                        <article class="result-block accent-block">
+                            <h3>Cosmic vibe</h3>
+                            <p id="compliment"></p>
+                        </article>
+
+                        <article class="result-block">
+                            <h3>Recommendation</h3>
+                            <p id="recommendation"></p>
+                        </article>
+
+                        <article class="result-block full-width">
+                            <h3>Prediction</h3>
+                            <p id="prediction"></p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
