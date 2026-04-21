@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="countdown-card">
+            <p class="eyebrow">Upcoming Event</p>
+            <h1>Olympic Countdown Timer</h1>
+            <p class="subtitle">Counting down to the opening day of the 2028 Summer Olympics.</p>
+
+            <div class="event-date">14 July 2028</div>
+
+            <section class="timer-grid" aria-live="polite">
+                <div class="time-box">
+                    <strong id="days">000</strong>
+                    <span>Days</span>
+                </div>
+                <div class="time-box">
+                    <strong id="hours">00</strong>
+                    <span>Hours</span>
+                </div>
+                <div class="time-box">
+                    <strong id="minutes">00</strong>
+                    <span>Minutes</span>
+                </div>
+                <div class="time-box">
+                    <strong id="seconds">00</strong>
+                    <span>Seconds</span>
+                </div>
+            </section>
+
+            <p id="result" class="result-text">Time left until the event begins.</p>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
