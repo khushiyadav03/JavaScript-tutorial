@@ -1,0 +1,47 @@
+const quotes = [
+    "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela",
+    "The way to get started is to quit talking and begin doing. - Walt Disney",
+    "Your time is limited, so don't waste it living someone else's life. - Steve Jobs",
+    "If life were predictable it would cease to be life, and be without flavor. - Eleanor Roosevelt",
+    "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. - Oprah Winfrey",
+    "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. - James Cameron",
+    "Life is what happens when you're busy making other plans. - John Lennon",
+    "Spread love everywhere you go. Let no one ever come to you without leaving happier. - Mother Teresa",
+    "When you reach the end of your rope, tie a knot in it and hang on. - Franklin D. Roosevelt",
+    "Always remember that you are absolutely unique. Just like everyone else. - Margaret Mead",
+    "Don't judge each day by the harvest you reap but by the seeds that you plant. - Robert Louis Stevenson",
+    "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+    "Tell me and I forget. Teach me and I remember. Involve me and I learn. - Benjamin Franklin",
+    "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart. - Helen Keller",
+    "It is during our darkest moments that we must focus to see the light. - Aristotle",
+    "Whoever is happy will make others happy too. - Anne Frank",
+    "Do not go where the path may lead, go instead where there is no path and leave a trail. - Ralph Waldo Emerson",
+    "In the end, it's not the years in your life that count. It's the life in your years. - Abraham Lincoln",
+    "Never let the fear of striking out keep you from playing the game. - Babe Ruth",
+    "Life is either a daring adventure or nothing at all. - Helen Keller",
+    "Many of life's failures are people who did not realize how close they were to success when they gave up. - Thomas A. Edison"
+]; 
+
+const button = document.querySelector("button");
+const quoteText = document.querySelector(".quote-text");
+const quoteAuthor = document.querySelector(".quote-author");
+
+function renderQuote(quoteEntry) {
+    const separator = quoteEntry.lastIndexOf(" - ");
+
+    if (separator === -1) {
+        quoteText.textContent = quoteEntry;
+        quoteAuthor.textContent = "Unknown";
+        return;
+    }
+
+    quoteText.textContent = quoteEntry.slice(0, separator);
+    quoteAuthor.textContent = quoteEntry.slice(separator + 3);
+}
+
+button.addEventListener("click", function() {
+    const index = Math.floor(Math.random() * quotes.length);
+    renderQuote(quotes[index]);
+});
+
+renderQuote(quotes[0]);
