@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="clock-card" aria-live="polite">
+            <p class="eyebrow">Live Time</p>
+            <h1>Digital Clock</h1>
+            <p class="subtitle">A clean real-time clock with date and day details.</p>
+
+            <div class="time-display" id="time">00:00:00</div>
+
+            <div class="meta-grid">
+                <div class="meta-box">
+                    <span class="meta-label">Day</span>
+                    <strong id="day">Monday</strong>
+                </div>
+                <div class="meta-box">
+                    <span class="meta-label">Date</span>
+                    <strong id="date">01 January 2026</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
