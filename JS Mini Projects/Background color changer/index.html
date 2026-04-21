@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="color-card">
+            <p class="eyebrow">Interactive Mini Project</p>
+            <h1>Background Color Changer</h1>
+            <p class="subtitle">
+                Pick a shade and watch the whole page adapt in real time.
+            </p>
+
+            <div class="selected-color" aria-live="polite">
+                <span class="selected-label">Current color</span>
+                <strong id="colorName">Thistle</strong>
+                <span id="colorValue">rgb(216, 191, 216)</span>
+            </div>
+
+            <div id="parent" class="color-grid">
+                <button class="color-btn is-active" data-name="Thistle" data-color="rgb(216, 191, 216)">
+                    <span class="swatch" style="--swatch-color: rgb(216, 191, 216);"></span>
+                    <span>Thistle</span>
+                </button>
+                <button class="color-btn" data-name="Red" data-color="rgb(255, 116, 116)">
+                    <span class="swatch" style="--swatch-color: rgb(255, 116, 116);"></span>
+                    <span>Red</span>
+                </button>
+                <button class="color-btn" data-name="Blue" data-color="rgb(104, 104, 251)">
+                    <span class="swatch" style="--swatch-color: rgb(104, 104, 251);"></span>
+                    <span>Blue</span>
+                </button>
+                <button class="color-btn" data-name="Green" data-color="rgb(101, 255, 101)">
+                    <span class="swatch" style="--swatch-color: rgb(101, 255, 101);"></span>
+                    <span>Green</span>
+                </button>
+                <button class="color-btn" data-name="Yellow" data-color="rgb(248, 248, 82)">
+                    <span class="swatch" style="--swatch-color: rgb(248, 248, 82);"></span>
+                    <span>Yellow</span>
+                </button>
+                <button class="color-btn" data-name="Purple" data-color="rgb(227, 101, 227)">
+                    <span class="swatch" style="--swatch-color: rgb(227, 101, 227);"></span>
+                    <span>Purple</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
