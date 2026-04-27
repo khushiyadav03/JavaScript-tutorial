@@ -2,9 +2,9 @@
 
 Welcome to my **JavaScript Tutorial** repository! This repository contains my journey of learning JavaScript from the basics to advanced concepts, along with a collection of fun mini-projects.
 
-## 🚀 Contents
+## Contents
 
-### 📚 Core JavaScript Concepts
+### Core JavaScript Concepts
 - Variables & Data Types
 - Memory Management (Stack & Heap)
 - Operators, Type Conversion & Loops
@@ -19,14 +19,14 @@ Welcome to my **JavaScript Tutorial** repository! This repository contains my jo
 - Object-Oriented Programming (Prototypes, Classes, Inheritance)
 - `this` Keyword (call, apply, bind)
 
-### 🛠️ JS Mini Projects
+### JS Mini Projects
 - **Background Color Changer**: A simple app that changes the background color on a button click.
 - **Clicker**: A counter application.
 - **Quiz**: A small multiple-choice quiz application.
 - **Random Quote Generator**: Fetches and displays random quotes.
 - **To-Do List**: A classic task management application.
 
-## 🌟 Technologies Used
+## Technologies Used
 - HTML
 - CSS
 - JavaScript
